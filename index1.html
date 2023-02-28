@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Light Display Final Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Noel Desmarais, Joe Brennan, Julian Henry">
+    <meta name="description" content="Website to control a light strip - CS121A Final">
+    <link rel="stylesheet" href="../static/custom.css?version=<?php print time(); ?>" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300">
+    <!--    <link rel="stylesheet" media="(max-width: 800px)" href="css/custom-tablet.css?version=--><!--" type="text/css">-->
+    <!--    <link rel="stylesheet" media="(max-width: 600px)" href="css/custom-phone.css?version=--><!--" type="text/css">-->
+</head>
+<body>
+
+    <h1>Joe's LED Control</h1>
+
+    <button id="off_led_button">Off</button>
+    <form action="#" method="post">
+        <input type="submit" id="led_button">
+        <div>
+                <h2>Select the type of the show:</h2>
+                <select name="type" id="type">
+                    <option value="choose" id="default">Choose one...</option>
+                    <option value="chaser">Chaser</option>
+                    <option value="solid">Solid</option>
+                    <option value="block">Block</option>
+                    <option value="pulse">Pulse</option>
+                    <option value="wave">Wave</option>
+                    <option value="twinkle">Twinkle</option>
+                </select>
+        </div>
+        <input type="color" id="color">
+    </form>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/static/button.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+*{
+    font-family: Montserrat;
+    color:white;
+}
+
+#strip{
+    width: 100vw;
+    position: absolute;
+    bottom: 5vh;
+    height: 1vh;
+    z-index: 10;
+    background: white;
+}
+
+body {
+    margin: 0;
+    background-color: #160069;
+    overflow: hidden;
+
+}
+#div1{
+    position: absolute;
+    bottom: -50vh;
+    z-index: -1;
+    left: 0;
+}
+#t1Cover1{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 407px 475px 0 0;
+    border-color: #160069 transparent transparent transparent;
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+}
+#t1Cover2{
+    width: 50%;
+    height: 50%;
+    background: #160069;
+    position: absolute;
+}
+#t1{
+    width: 80vw;
+    height: 100vh;
+    background: radial-gradient(dodgerblue 1%,transparent,transparent);
+}
+#corner{
+    background: radial-gradient(purple 1%,transparent,transparent);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: -50vh;
+    right: -50vw;
+    z-index: -1;
+}
+#submitDiv{
+    border-radius: .75em;
+    background: conic-gradient(purple, deepskyblue,rebeccapurple,purple);
+    width: 10em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: .1em;
+}
+#submit_button{
+    border-radius: .75em;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    border: 0;
+    background: #160069;
+}
+
+#offButtonDiv{
+    border-radius: .75em;
+    background: conic-gradient(purple, deepskyblue,rebeccapurple,purple);
+    width: 5em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: .1em;
+}
+#off_led_button{
+    border-radius: .75em;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    border: 0;
+    background: #160069;
+    font-size: 100%;
+}
+
+#optionsDiv{
+    display: flex;
+    position: relative;
+    height: 4em;
+    background: linear-gradient(90deg, purple, deepskyblue,rebeccapurple,purple);
+}
+.optionsSubDiv{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+#optionsDiv label{
+    margin: auto;
+}
+
+input[type="radio"]{
+    visibility: hidden;
+}
+input[type="radio"]:hover+label{
+    font-family: bold;
+}
+
+input[type="submit"]:hover{
+    background-color: white;
+}
+input[type="submit"]{
+    font-size: 100%;
+}
+
+#colors{
+    background: #160069;
+    flex-direction: row;
+    margin: auto;
+    border-radius: .75em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+#colorsBorder{
+    background: conic-gradient(purple, deepskyblue,rebeccapurple,purple);
+    width: 20vw;
+    height: 4em;
+    padding: .1em;
+    border-radius: .75em;
+    margin-left: auto;
+    margin-top: 5em;
+    display: flex;
+    margin-right: 10vw;
+}
+
+
+#colors label{
+    margin: auto;
+    text-transform: uppercase;
+    color: white;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    padding: 0;
+    width: 5em;
+    height: 5em;
+    border-right: #160069 solid .1em;
+    -moz-border-radius-topleft: .75em;
+    -moz-border-radius-bottomleft: .75em;
+    border-radius: 1em;
+    margin: auto auto auto .5em;
+}
+
+*:focus{
+    border-radius: 0;
+    outline: none;
+}
+
+::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+::-webkit-color-swatch{
+    border: .1em solid white;
+    border-radius: 0;
+    -moz-border-radius-topleft: .75em;
+    -moz-border-radius-bottomleft: .75em;
+}
+
+::-moz-focus-inner{
+    padding: 0;
+}
+
+#leftDiv{
+    position: absolute;
+    display: flex;
+    left: 0;
+    width: 40vw;
+    height: 100vh;
+}
+
+#insideDiv{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#LS{
+    font-family: Impact;
+    margin-left: 1em;
+    font-style: italic;
+    font-size: 2.5em;
+}
+
+#Controller{
+    margin-top: 0;
+    font-family: Impact;
+    font-size: 5em;
+}
+
+#rightDiv{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+}
+#onOff{
+    display: flex;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: 10vw;
+    margin-top: 10vh;
+}
+
+#submitDiv, #offButtonDiv{
+    margin: auto;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
